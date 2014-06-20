@@ -10,6 +10,11 @@ makeCacheMatrix <- function(x = matrix()) {
   
   ##Function for assigning the value of Matrix to var 'x' & its inverse.
   set <- function(y){
+    ## <<- operator. Usage :  var <<- value. 
+    ## This operator will cause the interpreter to first search through the current environment to find the symbol var. 
+    ## If the interpreter does not find the symbol var in the current environment, then the interpreter will next search through the parent environment. 
+    ## The interpreter will recursively search through environments until it either finds the symbol var or reaches the global environment.
+
     x <<- y
     inv <<- NULL
   }
